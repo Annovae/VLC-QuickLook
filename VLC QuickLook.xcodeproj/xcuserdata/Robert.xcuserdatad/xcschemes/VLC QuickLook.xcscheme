@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <PathRunnable
+         FilePath = "/Users/Robert/Developer/Objective-C/VLC-QuickLook/qlmanage">
+      </PathRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-p /video.avi"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
