@@ -1,6 +1,7 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
+#include <VLCKit/VLCKit.h>
 
 #import <Cocoa/Cocoa.h>
 
@@ -17,7 +18,11 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     NSString *_content = @"HELLO";
     //[NSString stringWithContentsOfURL:(__bridge NSURL *)url encoding:NSUTF8StringEncoding error:nil];
     
+
+    
+    
     QLPreviewRequestSetDataRepresentation(preview,(__bridge CFDataRef)[_content dataUsingEncoding:NSUTF8StringEncoding],kUTTypePlainText,NULL);
+    
     
     return noErr;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E108558018A9A73000F48105 /* VLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E108557F18A9A73000F48105 /* VLCKit.framework */; };
 		E1E2E75818A97C7300F1600D /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E2E75718A97C7300F1600D /* QuickLook.framework */; };
 		E1E2E75A18A97C7300F1600D /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E2E75918A97C7300F1600D /* ApplicationServices.framework */; };
 		E1E2E75C18A97C7300F1600D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E2E75B18A97C7300F1600D /* CoreServices.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E108557F18A9A73000F48105 /* VLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VLCKit.framework; path = "VLC QuickLook/VLCKit.framework"; sourceTree = "<group>"; };
+		E108558118A9B27200F48105 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		E1E2E75418A97C7300F1600D /* VLC QuickLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VLC QuickLook.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E2E75718A97C7300F1600D /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		E1E2E75918A97C7300F1600D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
@@ -57,6 +60,7 @@
 				E1E2E77C18A98F0B00F1600D /* Cocoa.framework in Frameworks */,
 				E1E2E77A18A98F0100F1600D /* WebKit.framework in Frameworks */,
 				E1E2E75E18A97C7300F1600D /* CoreFoundation.framework in Frameworks */,
+				E108558018A9A73000F48105 /* VLCKit.framework in Frameworks */,
 				E1E2E75818A97C7300F1600D /* QuickLook.framework in Frameworks */,
 				E1E2E75C18A97C7300F1600D /* CoreServices.framework in Frameworks */,
 				E1E2E75A18A97C7300F1600D /* ApplicationServices.framework in Frameworks */,
@@ -69,6 +73,7 @@
 		E1E2E74918A97C7300F1600D = {
 			isa = PBXGroup;
 			children = (
+				E108558118A9B27200F48105 /* View.xib */,
 				E1E2E75F18A97C7300F1600D /* VLC QuickLook */,
 				E1E2E75618A97C7300F1600D /* Frameworks */,
 				E1E2E75518A97C7300F1600D /* Products */,
@@ -86,6 +91,7 @@
 		E1E2E75618A97C7300F1600D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E108557F18A9A73000F48105 /* VLCKit.framework */,
 				E1E2E77B18A98F0B00F1600D /* Cocoa.framework */,
 				E1E2E77918A98F0100F1600D /* WebKit.framework */,
 				E1E2E75718A97C7300F1600D /* QuickLook.framework */,
@@ -294,6 +300,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Robert/Developer/Objective-C/VLC-QuickLook/VLC\\ QuickLook",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC QuickLook/VLC QuickLook-Prefix.pch";
 				INFOPLIST_FILE = "VLC QuickLook/VLC QuickLook-Info.plist";
@@ -307,6 +317,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Robert/Developer/Objective-C/VLC-QuickLook/VLC\\ QuickLook",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC QuickLook/VLC QuickLook-Prefix.pch";
 				INFOPLIST_FILE = "VLC QuickLook/VLC QuickLook-Info.plist";
